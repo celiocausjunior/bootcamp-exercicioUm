@@ -29,13 +29,13 @@ public class Client implements Serializable {
 	public Client() {
 	}
 
-	public Client(Long id, String name, String cpf, Double income, String birthDate, Integer children) {
+	public Client(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		this.birthDate = Instant.parse(birthDate);
+		this.birthDate = birthDate;
 		this.children = children;
 	}
 
